@@ -28,17 +28,17 @@ npm start 2>/dev/null | jq .
 
 ## Configuration
 
-In `scrape.ts`, adjust:
+In `src/scrape.ts`, adjust:
 
 - **`MIN_DOC_YEAR`** — Pagination stops when a row’s document number no longer starts with this year or higher (e.g. `2025` for `2025-116`). Missing or non-matching doc numbers also stop the crawl.
 
 ## Project layout
 
-| File | Purpose |
+| Path | Purpose |
 |------|---------|
 | `index.ts` | Entry: scrape, print JSON, render charts |
-| `scrape.ts` | HTTP fetch + Cheerio parsing |
-| `charts.tsx` | Ink chart UI |
-| `types.ts` | Shared types |
+| `src/scrape.ts` | HTTP fetch + Cheerio parsing |
+| `src/charts.tsx` | Ink chart UI |
+| `src/types.ts` | Shared types |
 
 TypeScript is run directly via **tsx** (no build step).

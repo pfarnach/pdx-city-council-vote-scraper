@@ -1,5 +1,5 @@
-import { renderCharts } from './charts.js'
-import { scrapeAllVotes } from './scrape.js'
+import { renderCharts } from './src/charts.js'
+import { scrapeAllVotes } from './src/scrape.js'
 
 try {
   const results = await scrapeAllVotes()
